@@ -6,11 +6,14 @@ body {
     line-height: 120%;
     letter-spacing: 1px;
     color: #c7c2da;
+    background-color: #E5E5E5;
     /* purple */
+    overflow-x: hidden;
 }
 
 .nav-container {
     display: block;
+    margin-top: 5%;
 }
 
 .logo {
@@ -43,7 +46,9 @@ a {
     color: rgb(85, 26, 139);
 }
 
-a :: hover {}
+.header {
+    align-items: center;
+}
 
 .image-container {
     width: 50%;
@@ -60,11 +65,22 @@ a :: hover {}
 
 .soc-media-container {
     display: block;
+    align-items: center;
+    /* width: calc( (100%/12) * 10); */
 }
 
 li {
+    /* margin: 0 auto; */
     display: inline-block;
     vertical-align: text-top;
+}
+
+.soc-media-container li {
+    align-items: center;
+    width: calc(100%/7);
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .live-section-container {
@@ -77,4 +93,36 @@ li {
 
 .about-container {
     display: block;
+}
+
+.row {
+    margin: 0%;
+}
+
+.wrapper {
+    width: calc( (100%/12) * 10);
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-container {
+    align-items: center;
+}
+
+#perlbackground {
+    position: absolute;
+    width: 504px;
+    height: 609px;
+    left: 68%;
+    /* left: 830px; */
+    /* right: -730px; */
+    top: -13px;
+    background: url(PERL LOGO LOWQ.png);
+    transform: rotate(-13.68deg);
+    z-index: -1;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
 }
