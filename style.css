@@ -8,3 +8,73 @@ body {
     color: #c7c2da;
     /* purple */
 }
+
+.nav-container {
+    display: block;
+}
+
+.logo {
+    width: 50%;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+
+.items {
+    width: 50%;
+    display: inline-block;
+    /* float: right; */
+    align-items: center;
+    text-align: center;
+}
+
+.items * {
+    width: calc(100%/6);
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(85, 26, 139);
+}
+
+a :: hover {}
+
+.image-container {
+    width: 50%;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.column {
+    display: inline-block;
+    float: left;
+}
+
+.soc-media-container {
+    display: block;
+}
+
+li {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.live-section-container {
+    align-items: center;
+}
+
+.despacia-link-container {
+    width: 100%;
+}
+
+.about-container {
+    display: block;
+}
