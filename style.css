@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
 }
 
+.column {
+    display: inline-block;
+    float: left;
+}
+
 .nav-container {
     display: block;
     margin-top: 5%;
@@ -33,11 +38,13 @@ img {
     /* float: right; */
     align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .items * {
-    width: calc(100%/6);
-    display: inline-block;
+    /* width: calc(100%/6.3); */
+    /* display: inline-block; */
     text-align: left;
 }
 
@@ -56,17 +63,14 @@ a {
 
 .hero-content {
     width: 50%;
-}
-
-.column {
-    display: inline-block;
-    float: left;
+    margin: 5% 0;
 }
 
 .soc-media-container {
     display: block;
     align-items: center;
     /* width: calc( (100%/12) * 10); */
+    margin: 5% 0;
 }
 
 li {
@@ -76,8 +80,9 @@ li {
 }
 
 .soc-media-container li {
-    align-items: center;
-    width: calc(100%/7);
+    /* width: calc(100%/7); */
+    display: flex;
+    justify-content: space-between;
     vertical-align: middle;
     margin: 0 auto;
     text-align: center;
@@ -85,6 +90,11 @@ li {
 
 .live-section-container {
     align-items: center;
+    margin: 5% 0;
+}
+
+.spotify {
+    display: inline;
 }
 
 .despacia-link-container {
@@ -93,6 +103,11 @@ li {
 
 .about-container {
     display: block;
+    margin: 5% 0;
+}
+
+.contact-container {
+    margin: 5% 0;
 }
 
 .row {
@@ -103,6 +118,8 @@ li {
     width: calc( (100%/12) * 10);
     align-items: center;
     margin: 0 auto;
+    flex-wrap: nowrap;
+    display: flex;
 }
 
 .header-container {
@@ -117,7 +134,7 @@ li {
     /* left: 830px; */
     /* right: -730px; */
     top: -13px;
-    background: url(PERL LOGO LOWQ.png);
+    background: url('PERL LOGO LOWQ.png');
     transform: rotate(-13.68deg);
     z-index: -1;
 }
@@ -125,4 +142,36 @@ li {
 table {
     margin: 0 auto;
     text-align: center;
+}
+
+.contact {
+    display: inline;
+}
+
+.newsletter-container {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#mailing-list-image {
+    /* position: absolute; */
+    background-image: url(img/angofooterfinal1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+}
+
+.mailing-list-container {
+    margin: auto;
+}
+
+.web-experts-footer {
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 1%;
 }

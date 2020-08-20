@@ -86,24 +86,26 @@
 
     <div class="live-section-container">
         <div class="wrapper">
-            <li>
-                <iframe src="https://open.spotify.com/embed/artist/6VmYblG4bWyNWQfhRNoHOL" width="380" height="484" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </li>
-            <li>
-                <iframe src=" https://open.spotify.com/follow/1/?uri=spotify:artist:6VmYblG4bWyNWQfhRNoHOL?si=DjK2_es-QcydG0e0ARCdUw&size=detail&theme=light " width="300 " height="56 " scrolling="no " frameborder="0 " style="border:none; overflow:hidden;
+            <div class="spotify">
+                <li style="order: 1;">
+                    <iframe src="https://open.spotify.com/embed/artist/6VmYblG4bWyNWQfhRNoHOL" width="380" height="484" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </li>
+                <li style="order: 3;">
+                    <iframe src=" https://open.spotify.com/follow/1/?uri=spotify:artist:6VmYblG4bWyNWQfhRNoHOL?si=DjK2_es-QcydG0e0ARCdUw&size=detail&theme=light " width="300 " height="56 " scrolling="no " frameborder="0 " style="border:none; overflow:hidden;
                     " allowtransparency="true "></iframe>
-            </li>
-            <li>
-                "<iframe style=" border: 0; width: 380px; height: 484px; " src="https://bandcamp.com/EmbeddedPlayer/album=1119873605/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/ " seamless><a href="http://infinitoaudio.bandcamp.com/album/despacia-i-dolor
+                </li>
+            </div>
+            <li style="align-self: start; float: right;">
+                <iframe style=" border: 0; width: 380px; height: 484px; float: right;" src="https://bandcamp.com/EmbeddedPlayer/album=1119873605/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/ " seamless><a href="http://infinitoaudio.bandcamp.com/album/despacia-i-dolor
                     ">Despacia I: Dolor by An Go</a></iframe>
             </li>
 
         </div>
     </div>
     <div class="despacia-link-container">
-        <div class="wrapper">
-            <img src="img/DespacioGIFMARKER.png" alt="">
-        </div>
+
+        <img src="img/DespacioGIFMARKER.png" alt="">
+
     </div>
     <div class="about-container">
         <div class="wrapper row">
@@ -119,8 +121,11 @@
             </div>
         </div>
     </div>
+    <!-- /*INSERT LINE HERE */ -->
+    <div class="wrapper">
+        <img src="img/DespacioTYPEplaveholder.png" alt="" style="margin: 5% 0;">
+    </div>
     <div class="merch-container">
-        <!-- /*INSERT LINE HERE */ -->
         <div class="wrapper">
             <div class="merch-content">
                 <h1>merch</h1>
@@ -169,18 +174,33 @@
     <!-- /*INSERT LINE HERE */ -->
     <div class="contact-container">
 
-        <div class="hero-content">
-            <div class="wrapper">
+        <div class="wrapper">
+            <div class="contact">
                 <h1>contact</h1>
                 <p>
-                    angolovesyoudeeply@gmail.com<br> Management and booking: Have You Heard Agency<br> liam@haveyouheardagency.com
+                    angolovesyoudeeply@gmail.com
+                </p>
+                <p>
+                    <b> Management and booking:<br> Have You Heard Agency</b>
+                </p>
+                <p>
+                    liam@haveyouheardagency.com
                 </p>
             </div>
         </div>
     </div>
     <footer>
         <div class="newsletter-container">
-            <img src="img/NEWSLETTER FORM.png" />
+            <div id="mailing-list-image">
+                <div class="wrapper">
+                    <p> subscribe for future love.</p>
+                    <form class="mailing-list-container">
+                        <input type="text" placeholder="name"></input>
+                        <input type="text" placeholder="email">
+                    </form>
+                    <p> an go loves you deeply.</p>
+                </div>
+            </div>
         </div>
         <div class="web-experts-footer">
             <p>WEBSITE BY •´¯`•» W乇ＢＥⓧⓟＥrTⓢ «•´¯`•</p>
