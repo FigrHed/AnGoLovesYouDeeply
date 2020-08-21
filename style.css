@@ -5,9 +5,9 @@ body {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 1px;
-    color: #c7c2da;
-    background-color: #E5E5E5;
-    /* purple */
+    color: #8E8E8E;
+    /* background-color: #E5E5E5; */
+    background-color: white;
     overflow-x: hidden;
 }
 
@@ -29,7 +29,8 @@ body {
 img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: scale-down;
+    object-fit: fill;
+    width: 100%;
 }
 
 .items {
@@ -50,20 +51,44 @@ img {
 
 a {
     text-decoration: none;
-    color: rgb(85, 26, 139);
+    color: #C7C2DA;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
 }
 
 .header {
     align-items: center;
 }
 
+.news {
+    text-align: right;
+}
+
+#headline {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .image-container {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.header-row {
+    margin: auto;
+    align-items: center;
 }
 
 .hero-content {
     width: 50%;
-    margin: 5% 0;
+    /* margin: 5% 0; */
+    padding: 2em;
 }
 
 .soc-media-container {
@@ -88,6 +113,10 @@ li {
     text-align: center;
 }
 
+.soc-media-icon:hover {
+    transform: scale(1.2);
+}
+
 .live-section-container {
     align-items: center;
     margin: 5% 0;
@@ -106,6 +135,10 @@ li {
     margin: 5% 0;
 }
 
+.merch-content {
+    width: 100%;
+}
+
 .contact-container {
     margin: 5% 0;
 }
@@ -117,7 +150,7 @@ li {
 .wrapper {
     width: calc( (100%/12) * 10);
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     flex-wrap: nowrap;
     display: flex;
 }
@@ -134,7 +167,7 @@ li {
     /* left: 830px; */
     /* right: -730px; */
     top: -13px;
-    background: url('PERL LOGO LOWQ.png');
+    /* background: url('PERL LOGO LOWQ.png'); */
     transform: rotate(-13.68deg);
     z-index: -1;
 }
@@ -144,8 +177,23 @@ table {
     text-align: center;
 }
 
+table.merch-table {
+    margin: auto;
+}
+
+#bootstrap-override figure {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
 .contact {
     display: inline;
+}
+
+.contact h1 {
+    margin-bottom: 15%;
 }
 
 .newsletter-container {
@@ -158,11 +206,25 @@ table {
 
 #mailing-list-image {
     /* position: absolute; */
-    background-image: url(img/angofooterfinal1.png);
-    background-repeat: no-repeat;
+    background-image: url(img/angofooterfinal1.gif);
+    /* background-repeat: no-repeat; */
     width: 100%;
-    height: 50vh;
+    height: 43vh;
     background-position: center;
+    object-fit: fill;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.newsletter {
+    /* flex: 1; */
+    margin: auto;
+    color: #FFFFFF;
+    align-items: center;
 }
 
 .mailing-list-container {
@@ -171,7 +233,18 @@ table {
 
 .web-experts-footer {
     background-color: black;
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1%;
+}
+
+.required {
+    text-align: center;
+    border: none;
+    border-width: 0px;
+    border-color: white;
+}
+
+.clear {
+    margin-top: 2%;
 }
