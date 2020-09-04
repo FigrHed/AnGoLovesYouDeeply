@@ -147,6 +147,11 @@ li {
 .spotify {
     /* display: inline; */
     width: 100%;
+    margin: 0 1.1rem;
+}
+
+.youtube-container {
+    max-width: 50%;
 }
 
 .despacia-link-container {
