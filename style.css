@@ -1,4 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
+    text-align: center;
     font-family: Space Mono;
     font-style: normal;
     font-weight: normal;
@@ -6,9 +12,28 @@ body {
     line-height: 120%;
     letter-spacing: 1px;
     color: #8E8E8E;
-    background-color: #E5E5E5;
-    /* background-color: white; */
+    /* background-color: #E5E5E5; */
+    background-color: white;
     overflow-x: hidden;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #C7C2DA;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    width: 100%;
 }
 
 .column {
@@ -19,18 +44,12 @@ body {
 .nav-container {
     display: block;
     margin-top: 5%;
+    position: relative;
 }
 
 .logo {
     width: 50%;
     display: inline-block;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: fill;
-    width: 100%;
 }
 
 .items {
@@ -47,17 +66,6 @@ img {
     /* width: calc(100%/6.3); */
     /* display: inline-block; */
     text-align: left;
-}
-
-a {
-    text-decoration: none;
-    color: #C7C2DA;
-}
-
-a:hover {
-    color: black;
-    text-decoration: none;
-    font-size: 110%;
 }
 
 .header {
@@ -102,6 +110,12 @@ a:hover {
     margin: 5% 0;
 }
 
+.soc-media {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
 li {
     /* margin: 0 auto; */
     display: inline-block;
@@ -115,6 +129,10 @@ li {
     vertical-align: middle;
     margin: 0 auto;
     text-align: center;
+}
+
+.soc-media-icon {
+    width: 5%;
 }
 
 .soc-media-icon:hover {
@@ -153,11 +171,21 @@ li {
 }
 
 .wrapper {
-    width: calc( (100%/12) * 10);
+    width: calc( (100%/12) * 11);
     align-items: center;
     margin: auto;
     flex-wrap: nowrap;
-    display: flex;
+    /* display: flex; */
+}
+
+.bottom-border {
+    border-bottom: 6px solid #C7C2DA;
+    padding: 5% 0;
+    /* border-color: ; */
+}
+
+.hover-black:hover {
+    color: black;
 }
 
 .header-container {
@@ -168,10 +196,10 @@ li {
     position: absolute;
     width: 504px;
     height: 609px;
-    left: 68%;
+    left: 75%;
     /* left: 830px; */
     /* right: -730px; */
-    top: -13px;
+    top: 753px;
     /* background: url('PERL LOGO LOWQ.png'); */
     transform: rotate(-13.68deg);
     z-index: -1;
@@ -184,6 +212,15 @@ table {
 
 table.merch-table {
     margin: auto;
+}
+
+figure {
+    width: 100%;
+}
+
+figure img {
+    /* max-width: 405px; */
+    width: 100%;
 }
 
 #bootstrap-override figure {
