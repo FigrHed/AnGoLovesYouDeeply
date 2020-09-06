@@ -124,6 +124,11 @@ img {
     padding: 2em;
 }
 
+.buttons{
+    max-width: 68%;
+    margin-left: auto;
+}
+
 .soc-media-container {
     display: block;
     align-items: center;
