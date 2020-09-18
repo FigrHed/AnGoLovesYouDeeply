@@ -373,6 +373,16 @@ input {
     #perlbackground {
         display: none;
     }
+    .promo-container {
+        display: none;
+    }
+    .spotify {
+        width: auto;
+        height: 69.1vh;
+    }
+    .youtube-container {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 492px) {
