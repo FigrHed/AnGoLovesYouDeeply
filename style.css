@@ -1,14 +1,52 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
+    text-align: center;
     font-family: Space Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 1px;
-    color: #8E8E8E;
-    background-color: #E5E5E5;
-    /* background-color: white; */
+    color: #C7C2DA;
+    /* background-color: #E5E5E5; */
+    background-color: #FFFFFF;
     overflow-x: hidden;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: #C7C2DA;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+h1 {
+    text-decoration: underline;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    width: 100%;
 }
 
 .column {
@@ -19,18 +57,12 @@ body {
 .nav-container {
     display: block;
     margin-top: 5%;
+    position: relative;
 }
 
 .logo {
     width: 50%;
     display: inline-block;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: fill;
-    width: 100%;
 }
 
 .items {
@@ -49,19 +81,16 @@ img {
     text-align: left;
 }
 
-a {
-    text-decoration: none;
-    color: #C7C2DA;
-}
-
-a:hover {
-    color: black;
-    text-decoration: none;
-    font-size: 110%;
-}
-
 .header {
     align-items: center;
+}
+
+#header-image {
+    align-items: flex-start;
+}
+
+#header-image div {
+    padding: 5px;
 }
 
 .news {
@@ -95,11 +124,22 @@ a:hover {
     padding: 2em;
 }
 
+.buttons {
+    max-width: 68%;
+    margin-left: auto;
+}
+
 .soc-media-container {
     display: block;
     align-items: center;
     /* width: calc( (100%/12) * 10); */
     margin: 5% 0;
+}
+
+.soc-media {
+    width: 70%;
+    margin: auto;
+    display: flex;
 }
 
 li {
@@ -117,8 +157,20 @@ li {
     text-align: center;
 }
 
+.soc-media-icon {
+    width: 5%;
+}
+
 .soc-media-icon:hover {
     transform: scale(1.2);
+}
+
+.border {
+    display: block;
+    width: 83%;
+    height: 6px;
+    margin: auto;
+    background-color: #C7C2DA;
 }
 
 .live-section-container {
@@ -128,7 +180,12 @@ li {
 
 .spotify {
     /* display: inline; */
-    width: 100%;
+    width: 45%;
+    margin-right: 1.1rem;
+}
+
+.youtube-container {
+    /* max-width: 50%; */
 }
 
 .despacia-link-container {
@@ -137,7 +194,7 @@ li {
 
 .about-container {
     display: block;
-    margin: 5% 0;
+    margin-top: 5%;
 }
 
 .merch-content {
@@ -153,11 +210,32 @@ li {
 }
 
 .wrapper {
-    width: calc( (100%/12) * 10);
+    width: calc( (100%/12) * 11);
     align-items: center;
     margin: auto;
     flex-wrap: nowrap;
-    display: flex;
+    /* display: flex; */
+}
+
+.bottom-border {
+    position: relative;
+}
+
+.bottom-border:before {
+    content: "";
+    position: absolute;
+    left: 8%;
+    top: 100%;
+    height: 1px;
+    border-bottom: 6px solid #C7C2DA;
+    margin: 5% auto;
+    padding: auto;
+    width: 83%;
+    /* border-color: ; */
+}
+
+.hover-black:hover {
+    color: black;
 }
 
 .header-container {
@@ -168,13 +246,17 @@ li {
     position: absolute;
     width: 504px;
     height: 609px;
-    left: 68%;
+    left: 72%;
     /* left: 830px; */
     /* right: -730px; */
-    top: -13px;
+    top: 701px;
     /* background: url('PERL LOGO LOWQ.png'); */
     transform: rotate(-13.68deg);
     z-index: -1;
+}
+
+.merch-container {
+    margin: 5%;
 }
 
 table {
@@ -186,12 +268,23 @@ table.merch-table {
     margin: auto;
 }
 
-#bootstrap-override figure {
+figure {
+    width: 100%;
+}
+
+figure img {
+    /* max-width: 405px; */
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+
+/* #bootstrap-override figure {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
-}
+} */
 
 .contact {
     display: inline;
@@ -207,6 +300,11 @@ table.merch-table {
     display: block;
     text-align: center;
     width: 100%;
+}
+
+.list-unstyled {
+    max-width: 50%;
+    margin: 5% auto;
 }
 
 #mailing-list-image {
@@ -243,11 +341,15 @@ table.merch-table {
     padding: 1%;
 }
 
-.required {
+input {
     text-align: center;
+    color: black;
     border: none;
     border-width: 0px;
     border-color: white;
+    background-color: #E5E5E5;
+    padding: 1% 5%;
+    font-size: 0.8rem;
 }
 
 .clear {
