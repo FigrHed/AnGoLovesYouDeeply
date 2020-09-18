@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
-    height: 100%;
+    /* height: 100%; */
+    width: 100vw;
 }
 
 body {
@@ -14,9 +15,12 @@ body {
     color: #C7C2DA;
     /* background-color: #E5E5E5; */
     background-color: #FFFFFF;
+    position: absolute;
     overflow-x: hidden;
-    height: 100%;
+    /* height: 100%; */
+    width: 100vw;
     -webkit-font-smoothing: antialiased;
+    display: block;
 }
 
 a {
@@ -62,6 +66,7 @@ img {
 
 .logo {
     width: 50%;
+    min-width: 260px;
     display: inline-block;
 }
 
@@ -72,7 +77,8 @@ img {
     align-items: center;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
 .items * {
@@ -87,6 +93,8 @@ img {
 
 #header-image {
     align-items: flex-start;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #header-image div {
@@ -140,6 +148,7 @@ img {
     width: 70%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 li {
@@ -149,12 +158,10 @@ li {
 }
 
 .soc-media-container li {
-    /* width: calc(100%/7); */
     display: flex;
-    justify-content: space-between;
     vertical-align: middle;
-    margin: 0 auto;
     text-align: center;
+    min-width: 40px;
 }
 
 .soc-media-icon {
@@ -354,4 +361,90 @@ input {
 
 .clear {
     margin-top: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 0;
+        display: block;
+        box-sizing: border-box;
+        color: black;
+    }
+    #perlbackground {
+        display: none;
+    }
+    .promo-container {
+        display: none;
+    }
+    .spotify {
+        width: auto;
+        margin: auto;
+        height: 69.1vh;
+    }
+    .youtube-container {
+        display: none;
+    }
+    .image-container {
+        max-width: 70%;
+        margin: auto;
+    }
+    #headline {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    #nav-con {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #header-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+        text-align: center;
+    }
+    .hero-content {
+        display: block;
+        width: 100%;
+    }
+    .image-container {
+        width: 100%;
+        display: block;
+    }
+    .news {
+        /* text-align: center; */
+    }
+    .buttons {
+        margin: auto;
+    }
+    input {
+        padding: 0%;
+    }
+    .web-experts-footer {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .items {
+        flex-wrap: wrap;
+    }
+    p {
+        font-size: 3.6vw;
+        text-align: left;
+        line-height: 2.9vh;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .d-flex {
+        flex-wrap: wrap;
+    }
 }
