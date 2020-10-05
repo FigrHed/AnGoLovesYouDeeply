@@ -94,7 +94,6 @@ img {
 #header-image {
     align-items: flex-start;
     display: flex;
-    flex-direction: column-reverse;
 }
 
 #header-image div {
@@ -391,6 +390,7 @@ input {
         justify-content: space-evenly;
         align-content: space-around;
         text-align: center;
+        flex-direction: column-reverse;
     }
     .hero-content {
         display: block;
@@ -414,7 +414,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 800px) {
     .items {
         flex-wrap: wrap;
     }
@@ -422,6 +422,12 @@ input {
         font-size: 3.8vw;
         /* text-align: left;
         line-height: 2.9vh; */
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .items {
+        flex-direction: column;
     }
 }
 
