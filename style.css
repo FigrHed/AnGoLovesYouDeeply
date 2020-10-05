@@ -362,15 +362,33 @@ input {
     margin-top: 2%;
 }
 
-@media {
+@media screen and (max-width: 800px) {
     body {
         margin: 0;
         display: block;
         box-sizing: border-box;
-        /* color: black; */
+        color: black;
     }
     #perlbackground {
         display: none;
+    }
+    .promo-container {
+        display: none;
+    }
+    .spotify {
+        width: auto;
+        margin: auto;
+        height: 69.1vh;
+    }
+    .youtube-container {
+        display: none;
+    }
+    .image-container {
+        max-width: 70%;
+        margin: auto;
+    }
+    #headline {
+        text-align: right;
     }
 }
 
@@ -401,7 +419,7 @@ input {
         display: block;
     }
     .news {
-        text-align: center;
+        /* text-align: center; */
     }
     .buttons {
         margin: auto;
@@ -419,9 +437,9 @@ input {
         flex-wrap: wrap;
     }
     p {
-        font-size: 3.8vw;
-        /* text-align: left;
-        line-height: 2.9vh; */
+        font-size: 3.6vw;
+        text-align: left;
+        line-height: 2.9vh;
     }
 }
 
