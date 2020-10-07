@@ -32,6 +32,7 @@ a:hover {
     color: black;
     text-decoration: none;
     font-size: 110%;
+    transform: scale(1.1);
 }
 
 h1 {
@@ -118,6 +119,17 @@ img {
     display: flex;
     flex-direction: column;
     height: inherit;
+    margin: 0px auto;
+    font-size: 50px;
+    line-height: 100%;
+}
+
+caption {
+    font-size: 100px;
+}
+
+#merch-poster {
+    margin-top: 20px;
 }
 
 .header-row {
@@ -321,6 +333,42 @@ figure img {
     height: 43vh;
     background-position: center;
     object-fit: fill;
+}
+
+.welcome {
+    max-width: 630px;
+    width: 50%;
+    margin: auto;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    /* or 60px */
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.whydonate {
+    margin-bottom: 54px;
+    font-size: 30px;
+}
+
+.event {
+    margin: 54px auto;
+    max-width: 1000px;
+    font-size: 30px;
+}
+
+.live-bandcamp {
+    margin: 54px auto;
+    max-width: 700px;
+}
+
+.live-vimeo {
+    margin: 54px auto;
 }
 
 .newsletter-form {
